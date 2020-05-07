@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Curso Javascript - Condicionais</title>
+    </head>
+<body>
+    <script>
+        function retornaSexo(sexo){
+
+            // === Verifica valor e tipo das variáveis
+            // !== Negação
+
+            if(sexo === 'M'){
+                return 'Masculino';
+            }else if(sexo === 'F'){
+                return 'Feminino';
+            }else{
+                return 'Outro';
+            }
+        
+        }
+
+        var resultado = retornaSexo('F');
+        console.log(resultado);
+
+        // Armazenando o valor de uma condição numa variável
+        var masculino;
+
+        if(sexo === 'M'){
+            masculino = true;
+        }else{
+            masculino = false;
+        }
+
+        // ou
+
+        var sexo = 'M';
+
+        var masculino1 = sexo === 'M';
+
+        console.log(masculino1);
+
+        
+        
+
+    </script>
+
+</body>
+</html>

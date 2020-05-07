@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Curso JavaScript - Intervalo e timeout</title>
+    </head>
+<body>
+    <div id="app">
+        <button onmouseover="mostraAlerta()">Me pressione</button>
+        <input onkeypress="mostraAlerta()" />
+    </div>
+
+    <script>
+        function exibeAlgo(){
+            console.log('Hello World');
+        }
+
+        //setInterval(exibeAlgo(), 1000); mostra exibeAlgo a cada 1 segundo
+
+        setTimeout(exibeAlgo, 5000); // Delay de 5 segundos e mostra exibeAlgo
+
+        function mostraAlerta(){
+            alert('Botão foi clicado');
+        }
+
+    </script>
+
+</body>
+</html>
